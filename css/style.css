@@ -80,17 +80,53 @@ body {
 }
 
 .projects-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 0px;
+    display: grid;
+    grid-template-columns: 25% 25%;
+    justify-content: space-evenly;
 }
 
 .project-item-container {
-    margin: 0 200px;
-    margin-bottom: 50px;
-    flex: 1 1 30%;
-    height: 200px;
-    background-color: var(--color-2);
+    margin: 20px 0;
+    height: 500px;
+    /* background-color: var(--color-2);
+    border: 5px solid var(--color-3); */
+}
+
+.project-title-header {
+    margin: 10px 0;
+    color: var(--color-4);
     text-align: center;
+    font-size: 24px;
+}
+
+.project-image-slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image-slideshow {
+    width: 90%;
+}
+
+.project-image-slideshow-button {
+    cursor: pointer;
+    margin: 0 -20px;
+    z-index: 1;
+    height: 20px;
+    background-color: var(--color-4);
+    border: none;
+    color: var(--color-1);
+}
+
+.project-description {
+    margin: 10px 10px;
+    color: var(--color-4);
+    text-align: center;
+    font-size: 18px;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
