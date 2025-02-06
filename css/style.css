@@ -1,8 +1,9 @@
 :root {
-    --color-1: #171726;
-    --color-2: #804055;
-    --color-3: #d99d62;
-    --color-4: #fff2d9;
+    --color-1: #0D1821;
+    --color-2: #6c91c2ff;
+    --color-3: #f45b69ff;
+    --color-4: #f4f4f6ff;
+    --color-5: #faa916ff;
 }
 
 body {
@@ -34,14 +35,14 @@ body {
     font-size: 40px;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: var(--color-3);
+    text-decoration-color: var(--color-5);
     text-decoration-thickness: 3px;
     text-underline-offset: 12px;
 }
 
 .name-header:hover {
     text-decoration: none;
-    color: var(--color-3);
+    color: var(--color-5);
     transition: color 0.25s ease;
 }
 
@@ -68,13 +69,13 @@ body {
 }
 
 .navbar-item:hover {
-    color: var(--color-3);
+    color: var(--color-5);
     transition: color 0.25s ease;
 }
 
 .selected {
     text-decoration: underline;
-    text-decoration-color: var(--color-3);
+    text-decoration-color: var(--color-5);
     text-decoration-thickness: 3px;
     text-underline-offset: 6px;
 }
@@ -88,8 +89,6 @@ body {
 .project-item-container {
     margin: 20px 0;
     height: 500px;
-    /* background-color: var(--color-2);
-    border: 5px solid var(--color-3); */
 }
 
 .project-title-header {
