@@ -58,10 +58,10 @@
     <script>
         var projects = document.getElementsByClassName("project-item-container");
         var slideIndexs = [];
-        for(let i = 0; i < projects.length; i++) {
+        for (let i = 0; i < projects.length; i++) {
             slideIndexs.push(0);
+            updateSlides(i)
         }
-        showSlides();
 
         function changeSlide(projectNum, moveAmount) {
             slideIndexs[projectNum] += moveAmount;
@@ -72,17 +72,15 @@
             else if (slideIndexs[projectNum] >= slides.length) {
                 slideIndexs[projectNum] = 0;
             }
-            showSlides()
+            updateSlides(projectNum)
         }
 
-        function showSlides() {
-            for(let i = 0; i < projects.length; i++) {
-                slides = projects[i].getElementsByClassName("project-image-slideshow");
-                for(let j = 0; j < slides.length; j++) {
-                    slides[j].style.display = "none";
-                }
-                slides[slideIndexs[i]].style.display = "block";
+        function updateSlides(projectNum) {
+            slides = projects[projectNum].getElementsByClassName("project-image-slideshow");
+            for (let j = 0; j < slides.length; j++) {
+                slides[j].style.display = "none";
             }
+            slides[slideIndexs[projectNum]].style.display = "block";
         }
 
         console.log(slideIndexs)
