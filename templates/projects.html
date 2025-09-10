@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='images/thumbnail_interview_coach_slide_1.png') }}"
+                    class="card-img-top img-fluid" alt="Interview Coach project screenshot">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Interview Coach</h5>
+                    <p class="card-text">
+                        Interview Coach is an AI-powered web application developed by a team of three for CSC
+                        430: Software Engineering.
+                        The platform helps job seekers prepare for interviews by offering personalized mock
+                        sessions, resume-based question generation, and instant AI feedback.
+                        Built with Next.js, FastAPI, and the OpenAI API, it allows users to practice
+                        industry-specific questions, refine their responses, and track progress over time.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="#" class="btn btn-primary">Show me more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
