@@ -1,12 +1,52 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container text-center my-5">
-    <div class="p-5 bg-white shadow-sm rounded">
-        <h1 class="display-4">🚧 Work in Progress 🚧</h1>
-        <p class="lead text-muted">
-            This page is currently under construction. Check back soon for updates!
-        </p>
+<div class="container py-4">
+  <h2 class="text-center mb-4">Resume & CV</h2>
+  <div class="row g-4 justify-content-center">
+
+    <!-- Resume Card -->
+    <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Resume</h5>
+          <p class="card-text">
+            Download or preview my professional resume highlighting technical skills, projects,
+            and experience.
+          </p>
+          <div class="mt-auto">
+            <a href="{{ url_for('static', filename='files/resume.pdf') }}" target="_blank" class="btn btn-primary me-2">
+              📄 View
+            </a>
+            <a href="{{ url_for('static', filename='files/resume.pdf') }}" download class="btn btn-outline-secondary">
+              ⬇ Download
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- CV Card -->
+    <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Curriculum Vitae (CV)</h5>
+          <p class="card-text">
+            My full academic CV, including education, research interests, publications,
+            and professional development.
+          </p>
+          <div class="mt-auto">
+            <a href="{{ url_for('static', filename='files/cv.pdf') }}" target="_blank" class="btn btn-primary me-2">
+              📄 View
+            </a>
+            <a href="{{ url_for('static', filename='files/cv.pdf') }}" download class="btn btn-outline-secondary">
+              ⬇ Download
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 {% endblock %}
