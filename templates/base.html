@@ -11,16 +11,26 @@
 </head>
 
 <body>
-    <div class="w-full min-h-full">
-        <div class="grid grid-cols-2 text-center">
-            <div>
-                <ul class="flex flex-col gap-3 text-2xl">
-                    <li><a>Home</a></li>
-                    <li><a>Home</a></li>
-                    <li><a>Home</a></li>
-                    <li><a>Home</a></li>
-                </ul>
-            </div>
+    <div class="w-full min-h-screen grid grid-cols-2 items-center text-center">
+        <div>
+            <ul class="flex flex-col gap-4 text-2xl">
+                <li
+                    class="cursor-pointer text-slate-950 underline-offset-6 transition duration-300 ease-in-out hover:underline hover:decoration-blue-700 hover:text-slate-700 hover:scale-110">
+                    <a href="{{ url_for('home') }}">Home</a>
+                </li>
+                <li
+                    class="cursor-pointer text-slate-950 underline-offset-6 transition hover:underline hover:decoration-blue-700 hover:text-slate-700">
+                    <a href="{{ url_for('projects') }}">Projects</a>
+                </li>
+                <li
+                    class="cursor-pointer text-slate-950 underline-offset-6 transition hover:underline hover:decoration-blue-700 hover:text-slate-700">
+                    <a href="{{ url_for('about') }}">About</a>
+                </li>
+                <li
+                    class="cursor-pointer text-slate-950 underline-offset-6 transition hover:underline hover:decoration-blue-700 hover:text-slate-700">
+                    <a href="{{ url_for('resume') }}">Resume/CV</a>
+                </li>
+            </ul>
         </div>
     </div>
 
