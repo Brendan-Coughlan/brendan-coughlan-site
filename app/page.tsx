@@ -44,13 +44,6 @@ export default function HomeScreen()
           </Link>
 
           <Link
-            href="/writing"
-            className="transition-colors hover:text-stone-950 hover:font-semibold"
-          >
-            Writing
-          </Link>
-
-          <Link
             href="/about"
             className="transition-colors hover:text-stone-950 hover:font-semibold"
           >
